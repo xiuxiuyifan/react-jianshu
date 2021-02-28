@@ -5,6 +5,9 @@ import PropTypes from 'prop-types';
 import './style/icon.scss'
 
 class ZIcon extends Component {
+	static defaultProps = {
+		className: ''
+	}
 	constructor(props) {
 		super(props)
 	}

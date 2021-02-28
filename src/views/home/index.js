@@ -9,7 +9,8 @@ import {
 	HomeWrapper,
 	HomeLeft,
 	HomeRight,
-	QrcodeWrapper
+	QrcodeWrapper,
+	RecommendWrapper
 } from './style';
 import Topic from './components/Topic';
 import Qrcode from './components/Qrcode';
@@ -26,7 +27,9 @@ class Home extends Component {
 					<QrcodeWrapper>
 						<Qrcode/>
 					</QrcodeWrapper>
-					<Recommend/>
+					<RecommendWrapper>
+						<Recommend/>
+					</RecommendWrapper>
 				</HomeRight>
 			</HomeWrapper>
 		);

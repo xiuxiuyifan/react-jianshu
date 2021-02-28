@@ -25,6 +25,9 @@ export const HomeLeft = styled.div`
       font-size: 18px;
       font-weight: 700;
       line-height: 1.5;
+			&:hover{
+        text-decoration: underline;
+			}
 		}
 		.description{
       margin: 0 0 8px;
@@ -52,6 +55,9 @@ export const HomeRight = styled.div`
  width: 320px;
  padding-left: 40px;
 	.topic{
+    margin-top: -4px;
+    padding-bottom: 4px;
+    min-height: 228px;
 		img{
       width: 100%;
       min-height: 50px;
@@ -86,5 +92,54 @@ export const QrcodeWrapper = styled.div`
       font-size: 13px;
       color: #999;
 		}
+	}
+`
+
+export const RecommendWrapper = styled.div`
+	.author{
+    font-size: 14px;
+    color: #969696;
+	}
+	li{
+		line-height: 20px;
+		margin-top: 15px;
+	}
+	.avatar{
+		float: left;
+		width: 48px;
+		height: 48px;
+		margin-right: 10px;
+		display: block;
+		cursor: pointer;
+		border: 1px solid #ddd;
+		border-radius: 50%;
+	}
+	.add-icon{
+		width: 13px;
+		height: 13px;
+		margin-right: 2px;
+	}
+	.concern{
+    float: right;
+    margin-top: 5px;
+    padding: 0;
+    font-size: 13px;
+    color: #42c02e;
+    font-weight: 400;
+    line-height: normal;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+	}
+	.name{
+    padding-top: 5px;
+    margin-right: 60px;
+    font-size: 14px;
+    display: block;
+	}
+	.desc{
+    margin-top: 2px 0 10px 0;
+    font-size: 12px;
+    color: #969696;
 	}
 `
