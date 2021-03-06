@@ -4,12 +4,14 @@ import './style/header.scss';
 import {CSSTransition} from 'react-transition-group';
 import {connect} from 'react-redux';
 import {inputFocused} from './store/actionCreators';
+import {Link} from 'react-router-dom';
 
 const ZHeader = (props) => {
 	return <div className='z-header'>
 		<div className={'width-limit clearfix'}>
-			<ZIcon icon={'jianshu'} className={'logo'}/>
-			
+			<Link to='/'>
+				<ZIcon icon={'jianshu'} className={'logo'}/>
+			</Link>
 			<div className={'right write-btn'}><ZIcon icon={'xiezuo'}
 																								className={'icon-size'}/><span>写文章</span>
 			</div>
@@ -20,7 +22,9 @@ const ZHeader = (props) => {
 				<ul className={'nav-ul'}>
 					{
 						!props.isLogin ? <>
-							<li className={'nav-item'}><span>首页</span></li>
+							<Link to='/'>
+								<li className={'nav-item'}><span>首页</span></li>
+							</Link>
 							<li className={'nav-item'}><ZIcon icon={'APPCopy'}
 																								className={'icon-size'}/><span>下载App</span>
 							</li>

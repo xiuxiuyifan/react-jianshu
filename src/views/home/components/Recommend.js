@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import ZIcon from '../../../components/ZIcon/ZIcon';
 import {connect} from 'react-redux';
 
-class Recommend extends Component {
+class Recommend extends PureComponent {
 	render() {
 		const {recommendList} = this.props
 		return (

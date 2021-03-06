@@ -8,10 +8,10 @@ import Detail from './views/detail';
 function App() {
 	return (
 		<div className="App">
-			<ZHeader/>
 			<BrowserRouter>
+				<ZHeader/>
 				<Route path="/" exact component={Home}/>
-				<Route path="/detail" exact component={Detail}/>
+				<Route path="/detail/:id" exact component={Detail}/>
 			</BrowserRouter>
 		</div>
 	);

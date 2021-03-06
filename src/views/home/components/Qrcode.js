@@ -1,7 +1,7 @@
-import React,{Component} from 'react';
+import React,{PureComponent} from 'react';
 import ZIcon from '../../../components/ZIcon/ZIcon';
 
-class Qrcode extends Component{
+class Qrcode extends PureComponent{
 	render() {
 		return(
 			<>

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 
 import List from './components/List';
 import Recommend from './components/Recommend';
@@ -15,7 +15,7 @@ import {
 import Topic from './components/Topic';
 import Qrcode from './components/Qrcode';
 
-class Home extends Component {
+class Home extends PureComponent {
 	render() {
 		return (
 			<HomeWrapper>
@@ -39,9 +39,6 @@ class Home extends Component {
 	}
 }
 
-const mapState = (state) => ({
-	articleList: state.get('home').get('articleList'),
-})
 
 const mapDispatch = (dispatch) => ({
 	getHomeData() {
@@ -51,4 +48,4 @@ const mapDispatch = (dispatch) => ({
 })
 
 
-export default connect(mapState, mapDispatch)(Home);
+export default connect(null, mapDispatch)(Home);

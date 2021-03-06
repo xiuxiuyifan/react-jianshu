@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 
 
 import './style/icon.scss'
 
-class ZIcon extends Component {
+class ZIcon extends PureComponent {
 	static defaultProps = {
 		className: ''
 	}
